@@ -10,40 +10,94 @@
     <link rel="shortcut icon" href="images/icons/swelling.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <section class="head">
-            <div class="icon-image">
-                <img src="images/icons/swelling.svg" alt="logo">
+
+    <header id="home">
+        <nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
-            <div class="head-title">
-                <h1><span class="green-text">Welcome to the portfolio of </span><span class="white-text">Protyasha</span>
-                </h1>
-            </div>
-        </section>
-        <section class="nav-with-intro">
-            <div class="navbar">
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#wroks">Works</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="intro">
-                <h2>Hi, I am PROTYASHA
-                .I am a web-developer</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="intro-section">
+                <div class="intro">
+                    <h1><span class="colored-text-grey">Hey, you are in the portfolio of </span><span class="colored-text-blue">PROTYASHA</span></h1>
+                    <p>I am Full-Stack Web-Developer</p>
+                </div>
                 <div class="intro-image">
-                <img src="images/relax.svg" alt="">
+                    <img src="images/relax.svg" alt="profile-image">
                 </div>
             </div>
         </section>
-    </header>
+
+        <section id="about" class="details">
+            <div class="about-me">
+                <h3 class="headings">About</h3>
+                <p>I am a full stack web developer.<br>I am working in this sector for 1 year.<br>I have made few projects and I am so passionate about making attractive websites with cool features.</p>
+            </div>
+            
+            <div class="skills">
+                <h4 class="sub-headings">Skills</h4>
+                <ul>
+                    <li>
+                        <i class="fas fa-check-square square-icon"></i>
+                        I can write well organized and meaningful code in <span class="highlight-color">HTML</span>.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-square square-icon"></i>
+                        I style websites and make them attractive using <span class="highlight-color">CSS</span>.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-square square-icon"></i>
+                        I can make dynamic and interactive websites using <span class="highlight-color">Javascript(ES6)</span>.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-square square-icon"></i>
+                        I have vast knowledge about <span class="highlight-color">Bootstrap</span>.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-square square-icon"></i>
+                        I can make good websites using <span class="highlight-color">API</span>.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-square square-icon"></i>
+                        I have a good position in <span class="highlight-color">Problem solving</span>.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-square square-icon"></i>
+                        I have knowledge of other programming languages like- <span class="highlight-color">C, C++ and Python</span>.
+                    </li>
+                </ul>
+                <button class="buttons"><a>Hire Me</a></button>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="headings">Projects</h2>
+            <div id="websites">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

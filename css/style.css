@@ -1,106 +1,264 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.landing h1 {
+    color: rgb(164, 118, 208);
+    margin-top: 200px;
+    margin-left: 15%;
+    font-size: 40px;
+}
+
+nav {
+    height: 10vh;
+    background-image: linear-gradient(160deg, rgb(143, 243, 143), rgb(168, 168, 204));
+    border-bottom: rgb(188, 243, 160) 10px solid;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+
+.nav-links li a:hover {
+    color: rgb(107, 103, 103);
+    font-size: 22px;
+}
+
+.intro-section{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+}
+
+.colored-text-grey{
+    color: rgb(141, 141, 140);
+}
+
+.colored-text-blue{
+    color: rgb(158, 158, 247);
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 10px;
+    font-size: 40px;
+}
+
+.intro, .intro-image{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.intro p{
+    margin-top: 20px;
+    color: rgb(94, 90, 97);
+    font-size: 20px;
+}
+
+
+.intro-image img{
+    width: 50%;
+    border:rgb(225, 222, 222) 1px solid;
+    border-radius: 10px;
+}
+
+.details{
+    width: 60%;
+    margin: 200px auto;
+}
+
+.headings{
+    color: rgb(241, 163, 102);
+    font-size: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.details p{
+    color: rgb(114, 107, 105);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.sub-headings{
+    color: rgb(96, 235, 96);
+    font-size: 25px;
+    margin-top: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.highlight-color{
+    color: rgb(21, 149, 184);
+}
+
+.skills ul li{ 
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 10px;
     list-style: none;
 }
 
-body{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Montserrat', sans-serif;
+.square-icon{
+    background-color: white;
+    color: rgb(26, 50, 99);
+    border: none;
+    border-radius: 5px;
 }
 
-.head{
-    display: flex;
-    justify-content: center;
-    background-image:
-    linear-gradient(160deg, rgb(130, 204, 214) ,rgb(250, 220, 237));
-    padding-top: 1%;
-}
-
-.icon-image{
-    width:50px;
-}
-
-.green-text{
-    color: rgb(231, 255, 186);
-}
-
-.white-text{
-    color: white;
-}
-.head img{
-    width: 100%;
-}
-
-.nav-with-intro{
-    display: flex;
-}
-
-.navbar{
-    width: 180px;
-    position: fixed;
-    border-right: solid 3px green;
-}
-
-.navbar a{
-    color: rgb(68, 66, 66);
-    transition: color .2s, font-size .4s;
-}
-
-.navbar ul li{
-    font-size: 25px;
-    color: rgb(34, 32, 32);
-    font-weight: bold;
-    position: relative;
-    right: 30px;
-    margin-bottom: 20px;
-}
-
-.navbar a:hover{
-    color: rgb(41, 41, 148);
-    font-size: 27px;
-}
-
-.intro{
-    width: 100%;
-    margin-left: 190px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.intro h2{
+.buttons{
+    border: none;
+    border-radius: 10px;
     font-size: 30px;
-    color: rgb(105, 175, 255);
+    cursor: pointer;
+    width: 150px;
+    height: 60px;
+    color: white;
+    background-image: linear-gradient(160deg, rgb(128, 128, 243), rgb(236, 60, 60));
+    margin-top: 20px;
+    transition: all ease 1s;
+    text-shadow: 1px 1px 5px black;
 }
 
-.intro-image{
-    width: 40%;
+.buttons:hover{
+    background-image: linear-gradient(160deg, rgb(150, 150, 235), rgb(240, 110, 110));
+    transform: scale(1.01);
+    box-shadow: 1px 1px 5px black;
 }
 
-.intro-image img{
+#projects{
+    padding-bottom: 100px;
+    width: 80%;
+    margin: 0% auto;
+}
+
+#projects h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+#websites{
+    display: grid;
+    margin-top: 60px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.webDiv{
+    border-radius: 8px;
+    border: 1px solid rgb(138, 135, 135);
+    cursor: pointer;
+    box-shadow:1px 1px 5px black;
+    transition: all ease .5s;
+    margin: 20px;
+}
+
+.web-image{
     width: 100%;
 }
 
-.black-text{
-    color: black;
+.web-image img{
+    width: 100%;
+    border-radius: 5px;
+    height: 100%;
 }
 
-h2{
-    animation-name: my-name;
-    animation-duration: infinite;
-    color: black;
+.web-title{
+    padding: 10px;
+    width: 100%;
 }
 
-@keyframes my-name{
-    10%{
-        color: blanchedalmond;
+.web-title h3{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(98, 100, 102);
+}
+
+.web-title h4{
+    font-family: monospace;
+    font-size: 15px;
+    margin-top: 10px;
+    color: rgb(127, 127, 235);
+}
+
+.webDiv:hover{
+    transform: scale(1.050);
+    opacity: .9;
+}
+
+
+
+
+/* media query part for mobile */
+
+@media screen and (max-width: 760px) {
+    .line {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
     }
-    30%{
-        color: blue;
+    nav {
+        position: relative;
     }
-    100%{
-        color: red;
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    .nav-links {
+        position: fixed;
+        background-image: linear-gradient(160deg, rgb(143, 243, 143), rgb(168, 168, 204));
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open {
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(800px at 90% -10%);
+        pointer-events: all;
+    }
+    .landing {
+        flex-direction: column;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links li a {
+        font-size: 25px;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+        opacity: 1;
     }
 }
