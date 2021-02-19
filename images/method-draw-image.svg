@@ -1,0 +1,22 @@
+<svg width="102" height="90" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;" stroke="null">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <defs style="vector-effect: non-scaling-stroke;" stroke="null">
+  <filter style="vector-effect: non-scaling-stroke;" stroke="null" id="svg_1_blur">
+   <feGaussianBlur style="vector-effect: non-scaling-stroke;" stroke="null" stdDeviation="0.1" in="SourceGraphic"/>
+  </filter>
+ </defs>
+ <g stroke="null">
+  <title stroke="null">background</title>
+  <rect stroke="null" fill="#fff" id="canvas_background" height="92" width="104" y="-1" x="-1"/>
+  <g style="vector-effect: non-scaling-stroke;" stroke="null" display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g stroke="null">
+  <title stroke="null">Layer 1</title>
+  <path stroke="#000" filter="url(#svg_1_blur)" id="svg_1" d="m54,53.14747l-25.45407,-25.25204l22.45401,-9.9031l22.45402,9.9031l5.54604,22.25204l-15.53911,17.84486l-24.92189,0l-15.539,-18.84486z" fill="#7AD6CA"/>
+  <ellipse stroke="#000" ry="7" rx="8.5" id="svg_4" cy="35.04999" cx="54" stroke-opacity="null" fill="#396849"/>
+  <path stroke="#000" opacity="0.45" id="svg_6" d="m3.74249,80.13786l48.5,-74l48.5,74l-97,0z" stroke-opacity="null" fill="#7f007f"/>
+  <path id="svg_9" d="m297.9986,295.75l0.25,-3.25l0,1.625l0.375,0l0,-4.875l-0.125,0l0.25,-3.25l0.25,3.25l-0.125,0l0,8.125l-0.625,0l0,1.625l-0.25,-3.25l0,0z" stroke-opacity="null" stroke-width="null" stroke="#000" fill="#7f007f"/>
+ </g>
+</svg>
